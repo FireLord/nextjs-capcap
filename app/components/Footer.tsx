@@ -1,31 +1,32 @@
 import Image from "next/image";
 import logo from "../../public/assets/logo.svg";
-import { ArrowDownTrayIcon } from "@heroicons/react/20/solid";
+import appStore from "../../public/assets/app_store.svg";
+import googlePlay from "../../public/assets/google_play.svg";
 
 export function Footer() {
     return (
-        <footer className="flex flex-row w-full bg-[#E46042] py-20 px-20 gap-x-10">
+        <footer className="flex flex-col lg:flex-row w-full bg-[#E46042] p-5 gap-y-5 lg:p-20 lg:gap-x-10">
 
-            {/* Logo and download button */}
-            <div className="flex flex-col items-start gap-y-7 w-1/4">
+            {/* Logo and description */}
+            <div className="flex flex-col items-start gap-y-3 lg:gap-y-7 lg:w-1/4">
                 <div className="flex gap-x-4 items-center">
-                    <Image src={logo} alt="CapCap logo" className="h-14 w-14" />
+                    <Image src={logo} alt="CapCap logo" className="h-14 w-14 rounded-lg" />
                     <h1 className="text-white font-medium text-4xl">
                         CapCap
                     </h1>
                 </div>
 
-                <p className="text-white text-sm font-medium">
+                <p className="text-white lg:text-[15px] font-medium">
                     CapCap - Caption for video is a tool that helps you to generate captions for your images.
                 </p>
             </div>
 
             {/* Links */}
-            <div className="flex flex-col w-3/4 gap-y-10">
+            <div className="flex flex-col lg:w-3/4 gap-y-10">
                 {/* Main rows */}
-                <div className="flex flex-row justify-between">
+                <div className="flex flex-col gap-y-5 lg:flex-row justify-between">
                     {/* help and navigation links */}
-                    <div className="flex flex-row gap-x-20">
+                    <div className="flex flex-row gap-x-20 justify-between">
                         {/* Main navigation */}
                         <div className="flex flex-col gap-y-4 items-start">
                             <h1 className="text-white font-bold text-xl">USE CAPCAP</h1>
@@ -35,7 +36,7 @@ export function Footer() {
                         </div>
 
                         {/* Help */}
-                        <div className="flex flex-col h-full justify-between">
+                        <div className="flex flex-col justify-between">
                             <div className="flex flex-col gap-y-4 items-start">
                                 <h1 className="text-white font-bold text-xl">NEED HELP?</h1>
                                 <button className="text-white font-medium">Privacy policy</button>
@@ -49,10 +50,22 @@ export function Footer() {
                     </div>
 
                     {/* Mobile store links */}
-                    <div className="flex flex-col gap-y-4 items-end">
+                    <div className="flex lg:flex-col gap-y-4 items-end justify-between lg:justify-normal">
                         <h1 className="text-white font-bold text-xl">DOWNLOAD CAPCAP</h1>
-                        <button className="text-white font-medium">Google Play</button>
-                        <button className="text-white font-medium">App Store</button>
+
+                        <div className="lg:hidden flex flex-row items-center gap-x-5">
+                        <button><Image src={appStore} alt="app store icon" className="w-7" /></button>
+                        <button><Image src={googlePlay} alt="google play icon" className="w-7" /></button>
+                        </div>
+
+                        <button className="hidden text-white font-medium lg:flex flex-row items-center gap-x-2">
+                            App Store
+                            <span><Image src={appStore} alt="app store icon" className="w-7" /></span>
+                        </button>
+                        <button className="hidden text-white font-medium lg:flex flex-row items-center gap-x-2">
+                            Google Play
+                            <span><Image src={googlePlay} alt="google play icon" className="w-7" /></span>
+                        </button>
                     </div>
                 </div>
 
