@@ -27,9 +27,9 @@ const testimonials: TestimonialModel[] = [
 
 export function Testimonial() {
     return (
-        <div className="flex flex-col items-center mt-20 lg:mt-28 gap-y-4 pb-28">
+        <div className="flex flex-col items-center mt-20 lg:mt-28 gap-y-4 pb-28" id="review">
             <h1 className="text-white text-center font-medium text-4xl lg:text-6xl">
-                Trusted by our customers
+                Trusted by our customers!
             </h1>
             <p className="text-neutral-300 text-center text-xl lg:text-2xl lg:mx-40">
                 CapCap is an automatic subtitle and captions generator for videos. 60+ Languages supported for English Captioning. Reach global audience with English translation.

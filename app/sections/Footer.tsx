@@ -1,11 +1,12 @@
 import Image from "next/image";
+import Link from 'next/link';
 import logo from "../../public/assets/logo.svg";
 import appStore from "../../public/assets/app_store.svg";
 import googlePlay from "../../public/assets/google_play.svg";
 
 export function Footer() {
     return (
-        <footer className="flex flex-col lg:flex-row w-full bg-[#E46042] p-5 gap-y-5 lg:p-20 lg:gap-x-10">
+        <footer className="flex flex-col lg:flex-row w-full bg-[#E46042] p-5 gap-y-5 lg:p-20 lg:gap-x-10" id="contact">
 
             {/* Logo and description */}
             <div className="flex flex-col items-start gap-y-3 lg:gap-y-7 lg:w-1/4">
@@ -30,16 +31,24 @@ export function Footer() {
                         {/* Main navigation */}
                         <div className="flex flex-col gap-y-4 items-start">
                             <h1 className="text-white font-bold text-xl">USE CAPCAP</h1>
-                            <button className="text-white font-medium">Features</button>
-                            <button className="text-white font-medium">Pricing</button>
-                            <button className="text-white font-medium">Contact</button>
+                            <button className="text-white font-medium">
+                                <Link href="#features">Features</Link>
+                            </button>
+                            <button className="text-white font-medium">
+                                <Link href="#review">Review</Link>
+                            </button>
+                            <button className="text-white font-medium">
+                                <Link href="#contact">Contact</Link>
+                            </button>
                         </div>
 
                         {/* Help */}
                         <div className="flex flex-col justify-between">
                             <div className="flex flex-col gap-y-4 items-start">
                                 <h1 className="text-white font-bold text-xl">NEED HELP?</h1>
-                                <button className="text-white font-medium">Privacy policy</button>
+                                <button className="text-white font-medium">
+                                    <Link href="/privacy">Privacy policy</Link>
+                                </button>
                             </div>
 
                             <div>

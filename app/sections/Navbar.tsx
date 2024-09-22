@@ -4,9 +4,9 @@ import { ArrowDownTrayIcon } from "@heroicons/react/20/solid";
 import { Bars3Icon } from "@heroicons/react/20/solid";
 
 const navLinks = [
-    { name: 'Features' },
-    { name: 'Pricing' },
-    { name: 'Contact' },
+    { name: 'Features', link: '#features' },
+    { name: 'Review' , link: '#review'},
+    { name: 'Contact' , link: '#contact' },
 ];
 
 export function Navbar() {
@@ -22,9 +22,9 @@ export function Navbar() {
             <div className="flex items-center gap-x-6">
                 <div className="hidden lg:flex pl-[74px] gap-x-14">
                     {navLinks.map((item, index) => (
-                        <p className="font-medium text-white hover:text-[#E46042]" key={index}>
+                        <a key={index} href={item.link} className="text-white font-medium hover:text-[#f67254]">
                             {item.name}
-                        </p>
+                        </a>
                     ))}
                 </div>
 
