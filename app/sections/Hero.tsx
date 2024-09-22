@@ -7,8 +7,8 @@ import googlePlay from "../../public/assets/google_play.svg";
 
 export function Hero() {
     return (
-        <div className="w-full h-[600px] bg-neutral-700 rounded-lg">
-            <div className="flex p-12 justify-between gap-x-5 items-center">
+        <div className="w-full bg-neutral-700 rounded-lg lg:mt-28">
+            <div className="flex h-full py-20 px-12 justify-between gap-x-5 items-center">
                 {/* Hero Text and Download icons */}
                 <div className="flex flex-col items-start lg:w-1/2 gap-y-10">
                     <h1 className="text-5xl font-bold text-white">
@@ -39,7 +39,7 @@ export function Hero() {
                 </div>
 
                 {/* Hero Image */}
-                <div className="hidden lg:flex gap-x-5 h-full justify-end">
+                <div className="hidden lg:flex gap-x-5 justify-end">
                     <Image
                         src={screenshot1}
                         alt="Screenshot 1"

@@ -6,7 +6,7 @@ import screenshot4 from "../../public/assets/screenshots/screenshot4.png";
 
 export function Features() {
     return (
-        <div className="flex flex-col items-center pt-14 gap-y-4">
+        <div className="flex flex-col items-center mt-20 lg:mt-28 gap-y-4">
             <h1 className="text-white text-center font-medium text-4xl lg:text-6xl">
                 What do we offer?
             </h1>
@@ -16,7 +16,7 @@ export function Features() {
             </p>
 
             {/* Feature 1 */}
-            <div className="pt-14 flex flex-col-reverse gap-x-5 justify-between lg:flex-row">
+            <div className="mt-20 lg:mt-28 flex flex-col-reverse gap-x-5 justify-between lg:flex-row">
                 <div className="flex flex-col gap-y-6 py-10 justify-center lg:w-1/2 lg:pr-24">
                     <h1 className="text-white text-4xl text-center lg:text-start lg:text-6xl">
                         Translate to multiple languages

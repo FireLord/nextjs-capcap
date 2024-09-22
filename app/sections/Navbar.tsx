@@ -11,7 +11,7 @@ const navLinks = [
 
 export function Navbar() {
     return (
-        <nav className="flex w-full items-center justify-between px-5 py-4 lg:container lg:mx-auto lg:px-20">
+        <nav className="flex w-full items-center justify-between px-5 py-4 lg:container lg:mx-auto lg:px-20 lg:mt-5">
             <div className="flex items-center gap-x-4">
                 <Image src={logo} alt="CapCap logo" className="h-12 w-12 rounded-lg" />
                 <h1 className="text-white font-medium text-2xl">

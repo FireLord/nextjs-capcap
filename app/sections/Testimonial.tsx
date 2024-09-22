@@ -27,7 +27,7 @@ const testimonials: TestimonialModel[] = [
 
 export function Testimonial() {
     return (
-        <div className="flex flex-col items-center py-14 gap-y-4 pb-48">
+        <div className="flex flex-col items-center mt-20 lg:mt-28 gap-y-4 pb-28">
             <h1 className="text-white text-center font-medium text-4xl lg:text-6xl">
                 Trusted by our customers
             </h1>
