@@ -1,5 +1,10 @@
 import type { Metadata } from "next";
+import localFont from "next/font/local";
 import "./globals.css";
+
+const montserratFont = localFont({
+  src: "../public/font/montserrat_font.ttf"
+});
 
 export const metadata: Metadata = {
   title: "CapCap - Captions For Videos",
@@ -13,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className={`${montserratFont.className} antialiased bg-black`}>
         {children}
       </body>
     </html>
