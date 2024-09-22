@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg-dotted-pattern {
+    position: relative;
+    background-color: #3E4A51; /* Sets the main background color */
+    background-image: radial-gradient(rgba(155, 155, 155, 0.692) 10%, transparent 10%);
+    background-size: 20px 20px; /* Adjust to control spacing */
+}

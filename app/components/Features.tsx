@@ -10,7 +10,7 @@ export function Features() {
             <h1 className="text-white text-center font-medium text-4xl lg:text-6xl">
                 What do we offer?
             </h1>
-            <p className="text-neutral-300 text-center text-xl lg:text-2xl lg:mx-80">
+            <p className="text-neutral-300 text-center text-xl lg:text-2xl lg:mx-40">
                 We offer a tool that generates captions for videos.
                 This tool is useful for content creators who want to make their videos more accessible to a wider audience.
             </p>
@@ -28,8 +28,8 @@ export function Features() {
                 </div>
 
                 <div className="flex items-center gap-x-4 justify-center">
-                    <Image src={screenshot1} alt="Screenshot of CapCap" className="h-[400px] w-1/2 lg:h-[600px] lg:w-[300px]" />
-                    <Image src={screenshot2} alt="Screenshot of CapCap" className="h-[400px] w-1/2 lg:h-[600px] lg:w-[300px]" />
+                    <Image src={screenshot1} alt="Screenshot of CapCap" className="h-[400px] w-1/2 lg:h-[600px] lg:w-[300px] rounded-lg" />
+                    <Image src={screenshot2} alt="Screenshot of CapCap" className="h-[400px] w-1/2 lg:h-[600px] lg:w-[300px] rounded-lg" />
                 </div>
             </div>
 
@@ -46,8 +46,8 @@ export function Features() {
                 </div>
 
                 <div className="flex items-center gap-x-4 justify-center">
-                    <Image src={screenshot3} alt="Screenshot of CapCap" className="h-[400px] w-1/2 lg:h-[600px] lg:w-[300px]" />
-                    <Image src={screenshot4} alt="Screenshot of CapCap" className="h-[400px] w-1/2 lg:h-[600px] lg:w-[300px]" />
+                    <Image src={screenshot3} alt="Screenshot of CapCap" className="h-[400px] w-1/2 lg:h-[600px] lg:w-[300px] rounded-lg" />
+                    <Image src={screenshot4} alt="Screenshot of CapCap" className="h-[400px] w-1/2 lg:h-[600px] lg:w-[300px] rounded-lg" />
                 </div>
             </div>
         </div>

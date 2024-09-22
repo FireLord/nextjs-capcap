@@ -1,6 +1,7 @@
 import Image from "next/image";
 import logo from "../..//public/assets/logo.svg";
 import { ArrowDownTrayIcon } from "@heroicons/react/20/solid";
+import { Bars3Icon } from "@heroicons/react/20/solid";
 
 const navLinks = [
     { name: 'Features' },
@@ -27,10 +28,12 @@ export function Navbar() {
                     ))}
                 </div>
 
-                <button className="px-6 py-2 bg-[#E46042] text-white font-medium rounded-3xl lg:hover:bg-orange-700 flex gap-x-1 items-center">
+                <Bars3Icon className="text-blue-50 size-6 lg:hidden" />
+
+                <button className="hidden lg:flex px-6 py-2 bg-[#E46042] text-white font-medium rounded-3xl lg:hover:bg-orange-700 gap-x-1 items-center">
                     Download
                     <span>
-                        <ArrowDownTrayIcon className="text-blue-50 size-6 animate-bounce"/>
+                        <ArrowDownTrayIcon className="text-white size-6 animate-bounce" />
                     </span>
                 </button>
             </div>

@@ -24,9 +24,9 @@ export function Footer() {
             {/* Links */}
             <div className="flex flex-col lg:w-3/4 gap-y-10">
                 {/* Main rows */}
-                <div className="flex flex-col gap-y-5 lg:flex-row justify-between">
+                <div className="flex flex-col gap-y-10 lg:flex-row justify-between">
                     {/* help and navigation links */}
-                    <div className="flex flex-row gap-x-20 justify-between">
+                    <div className="flex flex-row lg:gap-x-20 justify-between">
                         {/* Main navigation */}
                         <div className="flex flex-col gap-y-4 items-start">
                             <h1 className="text-white font-bold text-xl">USE CAPCAP</h1>
@@ -58,11 +58,11 @@ export function Footer() {
                         <button><Image src={googlePlay} alt="google play icon" className="w-7" /></button>
                         </div>
 
-                        <button className="hidden text-white font-medium lg:flex flex-row items-center gap-x-2">
+                        <button className="hidden text-white font-medium lg:flex flex-row items-center gap-x-5">
                             App Store
                             <span><Image src={appStore} alt="app store icon" className="w-7" /></span>
                         </button>
-                        <button className="hidden text-white font-medium lg:flex flex-row items-center gap-x-2">
+                        <button className="hidden text-white font-medium lg:flex flex-row items-center gap-x-5">
                             Google Play
                             <span><Image src={googlePlay} alt="google play icon" className="w-7" /></span>
                         </button>

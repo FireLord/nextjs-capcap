@@ -10,7 +10,7 @@ export function Price() {
 
             {/* Price Card */}
             <div className="flex flex-col w-full justify-center gap-y-5 lg:gap-x-14 pt-5 lg:flex-row">
-                <div className="h-96 w-full bg-[#3E4A51] rounded-xl lg:w-72">
+                <div className="h-96 w-full bg-[#3E4A51] rounded-lg lg:w-72">
                 
                 </div>
             </div>
