@@ -6,7 +6,6 @@ const navLinks = [
     { name: 'Features' },
     { name: 'Pricing' },
     { name: 'Contact' },
-    { name: 'Privacy' },
 ];
 
 export function Navbar() {
