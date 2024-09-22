@@ -28,8 +28,8 @@ export function Features() {
                 </div>
 
                 <div className="flex items-center gap-x-4 justify-center">
-                    <Image src={screenshot1} alt="Screenshot of CapCap" className="h-[400px] w-1/2 lg:h-[600px] lg:w-[300px] rounded-lg" />
-                    <Image src={screenshot2} alt="Screenshot of CapCap" className="h-[400px] w-1/2 lg:h-[600px] lg:w-[300px] rounded-lg" />
+                    <Image src={screenshot1} alt="Screenshot of CapCap" className="h-[400px] w-1/2 lg:h-[600px] lg:w-[300px] md:h-[500px] md:w-[250px] rounded-lg" />
+                    <Image src={screenshot2} alt="Screenshot of CapCap" className="h-[400px] w-1/2 lg:h-[600px] lg:w-[300px] md:h-[500px] md:w-[250px] rounded-lg" />
                 </div>
             </div>
 
@@ -46,8 +46,8 @@ export function Features() {
                 </div>
 
                 <div className="flex items-center gap-x-4 justify-center">
-                    <Image src={screenshot3} alt="Screenshot of CapCap" className="h-[400px] w-1/2 lg:h-[600px] lg:w-[300px] rounded-lg" />
-                    <Image src={screenshot4} alt="Screenshot of CapCap" className="h-[400px] w-1/2 lg:h-[600px] lg:w-[300px] rounded-lg" />
+                    <Image src={screenshot3} alt="Screenshot of CapCap" className="h-[400px] w-1/2 lg:h-[600px] lg:w-[300px] md:h-[500px] md:w-[250px] rounded-lg" />
+                    <Image src={screenshot4} alt="Screenshot of CapCap" className="h-[400px] w-1/2 lg:h-[600px] lg:w-[300px] md:h-[500px] md:w-[250px] rounded-lg" />
                 </div>
             </div>
         </div>
