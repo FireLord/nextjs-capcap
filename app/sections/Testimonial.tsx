@@ -1,11 +1,11 @@
-export function Price() {
+export function Testimonial() {
     return (
         <div className="flex flex-col items-center py-14 gap-y-4 pb-48">
             <h1 className="text-white text-center font-medium text-4xl lg:text-6xl">
-                Pricing
+                Trusted by our customers
             </h1>
             <p className="text-neutral-300 text-center text-xl lg:text-2xl lg:mx-80">
-                We offer free trial plan and paid plans. Choose a plan that suits your needs. Cancel anytime. No questions asked.
+                
             </p>
 
             {/* Price Card */}

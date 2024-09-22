@@ -1,8 +1,8 @@
-import { Features } from "./components/Features";
-import { Hero } from "./components/Hero";
-import { Navbar } from "./components/Navbar";
-import { Price } from "./components/Price";
-import { Footer } from "./components/Footer";
+import { Features } from "./sections/Features";
+import { Hero } from "./sections/Hero";
+import { Navbar } from "./sections/Navbar";
+import { Testimonial } from "./sections/Testimonial";
+import { Footer } from "./sections/Footer";
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
       <div className="px-5 lg:container lg:px-20 mx-auto">
         <Hero />
         <Features />
-        <Price />
+        <Testimonial />
       </div>
       <Footer />
     </>
