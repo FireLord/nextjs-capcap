@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logo from "../..//public/assets/logo.svg";
+import logo from "../../public/assets/logo.svg";
 import { ArrowDownTrayIcon } from "@heroicons/react/20/solid";
 import { Bars3Icon } from "@heroicons/react/20/solid";
 
