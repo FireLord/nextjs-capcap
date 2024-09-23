@@ -4,6 +4,7 @@ import screenshot2 from "../../public/assets/screenshots/screenshot2.png";
 import screenshot3 from "../../public/assets/screenshots/screenshot3.png";
 import appStore from "../../public/assets/app_store.svg";
 import googlePlay from "../../public/assets/google_play.svg";
+import * as motion from "framer-motion/client"
 
 export function Hero() {
     return (
@@ -12,8 +13,8 @@ export function Hero() {
                 {/* Hero Text and Download icons */}
                 <div className="flex flex-col items-start lg:w-1/2 gap-y-10">
                     <h1 className="text-5xl font-bold text-white">
-                        Manually 
-                        <span className="text-[#f67254]"> create or edit </span> 
+                        Manually
+                        <span className="text-[#f67254]"> create or edit </span>
                         captions
                     </h1>
                     <p className="text-neutral-300 font-medium text-xl ">
@@ -39,7 +40,10 @@ export function Hero() {
                 </div>
 
                 {/* Hero Image */}
-                <div className="hidden lg:flex gap-x-5 justify-end">
+                <motion.div
+                    animate={{ x: 100 }}
+                    transition={{ ease: "easeOut", duration: 1 }}
+                    className="hidden lg:flex gap-x-5 justify-end">
                     <Image
                         src={screenshot1}
                         alt="Screenshot 1"
@@ -55,7 +59,7 @@ export function Hero() {
                         alt="Screenshot 1"
                         className="h-[500px] w-[250px] rounded-lg object-fill"
                     />
-                </div>
+                </motion.div>
             </div>
         </div>
     );
